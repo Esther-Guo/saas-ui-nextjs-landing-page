@@ -15,13 +15,18 @@ const siteConfig = {
   privacyUrl: '#',
   header: {
     links: [
+      { 
+        label: 'Spells',
+        href: '/spells'
+      },
       {
         id: 'features',
         label: 'Features',
       },
       {
         id: 'pricing',
-        label: 'Pricing',
+        label: 'Build',
+        isdropdown: true
       },
       {
         id: 'faq',

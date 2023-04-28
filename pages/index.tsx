@@ -65,7 +65,7 @@ const Home: NextPage = () => {
   return (
     <Box>
       <SEO
-        title="Saas UI Landingspage"
+        title="Spellcasts"
         description="Free SaaS landingspage starter kit"
       />
       <Box>
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
 
         <TestimonialsSection />
 
-        <PricingSection />
+        {/* <PricingSection /> */}
 
         <FaqSection />
       </Box>
@@ -116,7 +116,7 @@ const HeroSection: React.FC = () => {
 
               <ButtonGroup spacing={4} alignItems="center">
                 <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
+                  Join Waitlist
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
@@ -135,7 +135,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  View demo
+                  Create a Spell
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -216,7 +216,7 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="SpellCasts Library">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
             Get started for free with <Em>30+ open source components</Em>.
@@ -238,10 +238,10 @@ const HighlightsSection = () => {
           >
             <Box>
               <Text color="yellow.400" display="inline">
-                yarn add
+                pip install
               </Text>{' '}
               <Text color="cyan.300" display="inline">
-                @saas-ui/react
+                spellcasts
               </Text>
             </Box>
             <IconButton
@@ -275,7 +275,7 @@ const HighlightsSection = () => {
       </HighlightsTestimonialItem>
       <HighlightsItem
         colSpan={[1, null, 2]}
-        title="Start your next idea two steps ahead"
+        title="Possible Spells"
       >
         <Text color="muted" fontSize="lg">
           We took care of all your basic frontend needs, so you can start
@@ -304,7 +304,7 @@ const HighlightsSection = () => {
             <Tag
               key={value}
               variant="subtle"
-              colorScheme="purple"
+              colorScheme="red"
               rounded="full"
               px="3"
             >
@@ -468,7 +468,7 @@ export async function getStaticProps() {
   return {
     props: {
       announcement: {
-        title: 'Get 50% off Saas UI Pro while in beta.',
+        title: 'Alpha testing, hold tight!',
         href: 'https://appulse.gumroad.com/l/saas-ui-pro-pre-order',
       },
     },

@@ -20,6 +20,10 @@ const styles = {
   }),
 }
 
+// replace theme color (default was purple & cyan)
+theme.colors.primary = theme.colors.red;
+theme.colors.secondary = theme.colors.green;
+
 export default extendTheme(
   {
     config: {
@@ -30,5 +34,5 @@ export default extendTheme(
     fontSizes,
     components,
   },
-  theme
+  theme,
 )
